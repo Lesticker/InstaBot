@@ -2,9 +2,7 @@ from selenium.webdriver.common.by import By
 
 class Locators():
     #Home page objects
-    username = "240zLoverz"
-    password = 8082002
-    hashtag = "#model"
+
     cookie_xpath = (By.XPATH, "/html/body/div[4]/div/div/button[1]")
     username_xpath = (By.XPATH, "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input")
     password_xpath = (By.XPATH, "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input")
