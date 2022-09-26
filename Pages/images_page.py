@@ -1,9 +1,6 @@
-# from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.common.alert import Alert
 from Pages.locators import Locators
-# from selenium.common.exceptions import TimeoutException
 import time
 
 
@@ -12,7 +9,6 @@ class ImagesSite():
     def __init__(self, driver):
         self.driver = driver
 
-    
     def get_into_img(self):
         time.sleep(1)
         WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((Locators.first_img_xpath))).click()
