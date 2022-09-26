@@ -14,7 +14,7 @@ class BuyTest(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        cls.s = Service(r"C:\Users\Dawid\.wdm\drivers\chromedriver\win32\104\chromedriver.exe")
+        cls.s = Service(r"../chromedriver/104/chromedriver.exe")
         cls.driver = webdriver.Chrome(service=cls.s)
         cls.driver.maximize_window()
     
