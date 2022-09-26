@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
 
-class Locators():
-    #Home page objects
 
+class Locators():
+    # Home page objects
     cookie_xpath = (By.XPATH, "/html/body/div[4]/div/div/button[1]")
     username_xpath = (By.XPATH, "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input")
     password_xpath = (By.XPATH, "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input")
@@ -17,4 +17,3 @@ class Locators():
     like = (By.XPATH, "(//*[name()='svg' and @aria-label='Lubię to!' and @width=24])[2]")
     unlike = (By.XPATH, "(//*[name()='svg' and @aria-label='Nie lubię' and @width=24])[2]")
     next_photo = (By.XPATH, "//*[name()='svg' and @aria-label='Dalej']")
-
