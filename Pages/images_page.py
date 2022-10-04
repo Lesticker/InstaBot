@@ -2,7 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Pages.locators import Locators
 import time
-
+import random
 
 class ImagesSite():
 
@@ -17,11 +17,9 @@ class ImagesSite():
         while True:
             try:
                 red_heart = WebDriverWait(self.driver, 3).until(EC.element_to_be_clickable((Locators.like)))
+                time.sleep(random.uniform(0.5, 2))
                 red_heart.click()
-                time.sleep(1)
-                print("lajknal mooooooooooooooooooooooooooooooooo")
                 return False
             except:
-                time.sleep(2)
-                WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable((Locators.next_photo))).click()
-                print("pominal")
+                time.sleep(random.uniform(0.5, 1))
+                WebDriverWait(self.driver, 4).until(EC.element_to_be_clickable((Locators.next_photo))).click()
