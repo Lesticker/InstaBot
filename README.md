@@ -3,7 +3,9 @@
 Python
 Selenium
 ## Setup
-Install selenium webdriver and Selenium.
+Download same chrome webdriver version as your chrome and put it into chromedriver/104/ folder.
+
+Install Selenium.
 ```
 $ pip install selenium
 ```
